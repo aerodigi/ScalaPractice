@@ -14,15 +14,13 @@ import scala.io.StdIn
 object BonusCalc extends App {
 
   def calculateBonus(salary: Int, bonus: Boolean): Unit = {
-    val salaryFloat = salary.toFloat
     if (bonus == true) {
-      val bonusReturn = salaryFloat * 20 / 100
-      val brInt = salaryFloat.toInt + bonusReturn.toInt
+      val bonusReturn = salary * 20 / 100
+      val brInt = salary + bonusReturn
       println(s"£$brInt")
     }
     else {
-      val salaryInt = salaryFloat.toInt
-      println(s"£$salaryInt")
+      println(s"£$salary")
     }
   }
 
