@@ -16,8 +16,8 @@ object BonusCalc extends App {
   def calculateBonus(salary: Int, bonus: Boolean): Unit = {
     if (bonus == true) {
       val bonusReturn = salary * 20 / 100
-      val brInt = salary + bonusReturn
-      println(s"£$brInt")
+      val salaryWithBonus = salary + bonusReturn
+      println(s"£$salaryWithBonus")
     }
     else {
       println(s"£$salary")
